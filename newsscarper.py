@@ -29,7 +29,7 @@ if __name__ == "__main__":
     
     if html_content:
         articles = extract_article_texts(html_content)
-        print(f"Found {len(articles)} articles for {company_name}:")
+        print(f"Found {len(articles)} articles for {topic}:")
         for article in articles:
             print(f"Text: {article['text']}")
             print()

@@ -22,8 +22,8 @@ def extract_article_texts(html_content):
     return articles
 
 if __name__ == "__main__":
-    company_name = "OpenAI"  # Replace with the company you want to search for
-    url = f"https://news.google.com/search?q={company_name}&hl=en-US&gl=US&ceid=US:en"
+    topic = "OpenAI"  # Replace with anything you want to search for
+    url = f"https://news.google.com/search?q={topic}&hl=en-US&gl=US&ceid=US:en"
     
     html_content = fetch_webpage(url)
     
